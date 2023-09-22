@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="element">
+            <div class="box">
+                <label for="imageInput" class="box__custom-file-upload">
+                    Добавить озображение
+                </label>
+                <input type="file" id="imageInput" accept="image/*" class="box__imageInput">
+                <div id="targetElement" class="box__target-element">
+                    <p class="box__target-element__imageText">image</p>
+                </div>
+                <form>
+                    <textarea name="" id="textarea" placeholder="описание к фото"></textarea>
+                </form>
+                <input type="button" value="Опубликовать" id="submit">
+            </div>
+        </div>
+        <div class="element element2">
+            <div class="box">
+                <header class="box__headerPost">Posts</header>
+                <div class="box__post">
+                    <div class="box__post__postImg"></div>
+                    <div class="box__post__postText"></div>
+                    <textarea class="box__post__changePostText" placeholder="измените текст"></textarea>
+                </div>
+                <div class="box__panelBottom">
+                    <button class="box__panelBottom__btnTextPost box__panelBottom__change" value="changeText">changeText</button>
+                    <button class="box__panelBottom__btnTextPost box__panelBottom__delete" value="deleteText">deleteText</button>
+                    <button class="box__panelBottom__btnTextPost box__panelBottom__save" value="addText">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
